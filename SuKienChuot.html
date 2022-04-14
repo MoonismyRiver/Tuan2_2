@@ -9,18 +9,19 @@
 <form>
     <img id="myImage" src="anh1.jfif"/>
     <p>Click button below to move the image to right</p>
-    <input type="button" value="Click Me"/>
+    <input type="button" value="Click Me" onclick="moveRight();" />
     <script>
-        let imgObj = null;
-
+        let imgObj = document.getElementById('myImage');
 
         function init() {
-            imgObj = document.getElementById('myImage');
-            imgObj.style.position = 'relative';
-            imgObj.style.left = '12px';
-            window.onload = init;
-            <input type="button" value="Click Me" onClick="moveRight();"/>
+             imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
         }
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+        }
+        window.onload = init;
+
 
     </script>
 
