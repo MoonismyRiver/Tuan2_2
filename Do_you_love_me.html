@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function yes() {
+            alert("<3");
+        }
+
+        function changer() {
+            let btn = document.getElementById('btn')
+            btn.style.marginLeft = Math.random() * 200 + "px";
+            btn.style.marginTop = Math.random() * 200 + "px";
+            btn.style.color = "green"
+
+        }
+    </script>
+</head>
+<body>
+
+<p> Do You Love Me ? </p>
+
+<button onclick='yes()'> Yes</button>
+<button id='btn' style="position: absolute;" onmouseover="changer()"> No</button>
+
+</body>
+</html>
