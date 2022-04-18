@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trinh bậc 2</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập hệ số bậc 2:");
+    let b = +prompt("nhập hệ số bậc 1:");
+    let c = +prompt("nhập hằng số:");
+    let delta = (b * b) - 4 * a * c;
+    if (delta < 0) {
+        alert("phương trình vô nghiệm");
+    } else if (delta == 0) {
+        alert("phương trình có nghiệm kép là : " + -b / (2 * a));
+    } else {
+        let nghiem1 = (-b + Math.sqrt(delta)) / (2 * a);
+        let nghiem2 = (-b - Math.sqrt(delta)) / (2 * a);
+        alert("phương trình có 2 nghiệm là :"+ nghiem1 + " và " + nghiem2);
+    }
+</script>
+</body>
+</html>
